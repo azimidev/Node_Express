@@ -1,0 +1,21 @@
+<article class="socialmediaicons">
+	<span class="title">Join the movement: </span>
+	<ul class="group">
+		<% appdata.social.forEach(function(item) { %>
+		<li>
+			<a href="<%= item.url %>">
+				<img src="<%= item.img %>" alt="icon for <%= item.shortname %>">
+			</a>
+		</li>
+		<% }); %>
+
+		<%# for(var i = 0; i < appdata.social.length; i++) { %>
+		<!--<li>-->
+			<!--<a href="<%#= appdata.social[i].url %>">-->
+				<!--<img src="<%#= appdata.social[i].img %>" alt="icon for <%#= appdata.social[i].shortname %>">-->
+			<!--</a>-->
+		<!--</li>-->
+		<%# } %>
+
+	</ul>
+</article>
